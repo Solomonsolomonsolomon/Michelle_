@@ -1,0 +1,42 @@
+.SecondSection {
+  width: 70%;
+  margin: 30px auto;
+  background-color: #fff;
+  border: 1px solid #9f2305;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 5px #0000003c;
+}
+
+.optionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.method {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 40px 40px 40px;
+}
+
+.title {
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+  .SecondSection{
+    width:90%;
+  }
+}

@@ -1,0 +1,97 @@
+.deliveryAddress {
+  width: 70%;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #9f2305;
+  padding: 30px 20px;
+  box-shadow: 2px 5px 5px #0000003c;
+}
+
+.title {
+  text-align: center;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.addressContainer {
+  display: flex;
+}
+
+.formContainer {
+  padding: 1rem;
+  flex: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer {
+  width: 100%;
+}
+
+.option1 {
+  border-radius: 6px;
+  background-color: #fff;
+  border: 2px solid #cbd2e0;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.textAreaContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.textAreaContainer label {
+  font-size: 0.85rem;
+  color: #767676;
+}
+
+.textArea {
+  border-radius: 6px;
+  background-color: #fff;
+  border: 2px solid #cbd2e0;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.mapContainer {
+  flex: 1;
+  padding: 1rem;
+}
+
+.map {
+  width: 100%;
+  height: 370px;
+}
+
+@media screen and (max-width: 600px) {
+  .formContainer {
+    padding: 0rem;
+  }
+  .addressContainer {
+    flex-direction: column-reverse;
+  }
+
+  .map {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .addressContainer {
+    flex-direction: column-reverse;
+  }
+}

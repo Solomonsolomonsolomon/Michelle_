@@ -1,0 +1,54 @@
+.fifthSection {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header {
+  font-size: 1.5rem;
+  color: var(--secondaryColor);
+}
+
+.sectionItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 33.3%;
+  gap: 20px;
+}
+
+.mainText {
+  color: var(--secondaryColor);
+  text-align: center;
+  font-size: 15px;
+}
+
+.icon {
+  width: 80px;
+  height: 95px;
+}
+
+@media screen and (max-width: 600px) {
+  .sectionItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .item {
+    width: 100%;
+  }
+}

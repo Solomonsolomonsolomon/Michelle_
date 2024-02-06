@@ -1,0 +1,41 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    text-align: center;
+    padding: 20px
+}
+
+.firstText,
+.secondText,
+.thirdText,
+.button{
+    padding: 15px 0px;
+}
+
+.firstText{
+    color: #EE3C20;
+}
+
+.thirdText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thirdText p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #EE3C20;
+    text-align: center;
+}
+
+.button Button{
+  width: 330px;
+  text-decoration: none;
+}

@@ -1,0 +1,17 @@
+
+.reviewOrder{
+    background: url('/ReviewOrder.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 40px ;
+} 
+
+.step{
+    padding: 40px;
+}
+
+@media screen and (max-width:600px){
+    .step{
+        padding: 10px 0;
+    }
+}

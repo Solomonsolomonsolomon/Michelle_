@@ -1,0 +1,204 @@
+.header {
+  z-index: 3;
+  background-color: var(--primaryColor);
+  top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #ebe0ce;
+  box-shadow: 0 0.3rem 5px rgba(0, 0, 0, 0.2);
+  padding: 0.6rem 1.5rem;
+  overflow: hidden;
+}
+
+.phone {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.phone img {
+  filter: hue-rotate(0deg);
+}
+
+.phone:hover img {
+  filter: hue-rotate(120deg);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.hamBurger {
+  color: var(--secondaryColor);
+  font-size: 1.5rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.2rem;
+}
+
+.phoneNumber {
+  display: block;
+}
+
+.logo {
+  height: 50px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.cart {
+  display: none;
+  position: relative;
+  color: var(--secondaryColor);
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  background-color: var(--secondaryColor);
+  box-shadow: 0 0 50px 10px var(--primaryColor) inset;
+  border-radius: 50%;
+}
+
+.counter {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -7px;
+  right: -2px;
+  width: 17px;
+  height: 17px;
+  font-size: 15px;
+  background-color: var(--secondaryColor);
+  box-shadow: 0 0 50px 10px var(--primaryColor) inset;
+  border-radius: 50%;
+}
+
+/* Sidebar Styles */
+.navMenu {
+  background-color: #ac523d;
+  width: 250px;
+  z-index: 10;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.activeButton{
+  background-color: rgba(0, 0, 0, 0.182);
+
+}
+
+.user{
+  color: var(--secondaryColor);
+  font-size: 1.5rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.2rem;
+}
+
+.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.navLink {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.navLink a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.navLink a:hover {
+  background-color: var(--primaryColor);
+  color: #ac523d;
+}
+
+.navMenuItems {
+  width: 100%;
+}
+
+.navbarToggle {
+  font-size: 1.5rem;
+  padding-right: 1.1rem;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #f5f5f5;
+}
+
+.navText {
+  margin-left: 16px;
+}
+
+.logoAndSidebar {
+  display: flex;
+  gap: 5px;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .navMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0.4rem 0.6rem;
+  }
+
+  .phoneNumber {
+    display: none !important;
+  }
+
+  .hamBurger {
+    display: flex;
+  }
+
+  .buttonContainer {
+    display: none;
+  }
+
+  .buttonContainermb{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .cart{
+    display: flex;
+  }
+}

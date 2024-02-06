@@ -1,0 +1,56 @@
+.page {
+  width: 100%;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.imageAndDescription {
+  display: flex;
+  gap: 10px;
+}
+
+.foodImage {
+  width: 6rem;
+  height: 6rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.secondaryText {
+  color: #b97160;
+}
+
+.button1 {
+  display: block;
+}
+
+.button2 {
+  display: none;
+}
+
+.dash {
+  border-top: 1px solid #b5c7ce;
+}
+
+@media screen and (max-width: 600px) {
+  .button1 {
+    display: none;
+  }
+  .button2 {
+    display: block;
+  }
+
+  .priceAndButton{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+}

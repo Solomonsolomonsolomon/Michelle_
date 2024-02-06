@@ -1,0 +1,23 @@
+.categories{
+  position: relative;
+  margin: 0 50px;
+}
+
+.gap{
+    position: absolute;
+    top: -140px;
+}
+
+.categories h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+@media screen and (max-width:600px){
+  .categories{
+    margin: 0;
+  }
+  .gap{
+    top: -100px;
+  }
+}

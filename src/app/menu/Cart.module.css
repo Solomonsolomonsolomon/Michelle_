@@ -1,0 +1,96 @@
+.cardContainer {
+  border: 1px solid var(--secondaryColor);
+}
+
+.iconXContainer {
+  display: none;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  padding: 95px;
+}
+
+.cartImage {
+  width: 100px;
+  height: 100px;
+}
+
+.imgAndCart {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.cart1 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+
+.orderItemsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderItemTitle {
+  display: flex;
+  gap: 20px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quantityContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.totalContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullPriceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    background-color: var(--primaryColor);
+  }
+  .iconXContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+
+  .orderItem{
+    flex-direction: column;
+  }
+
+  .orderItemAmount{
+    margin-left: 30px;
+  }
+}

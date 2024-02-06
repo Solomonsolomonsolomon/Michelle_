@@ -1,0 +1,55 @@
+.footer {
+  background: url("/Background2.png");
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 45px;
+}
+
+.firstRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstRow p {
+  color: #fff;
+}
+
+.secondRow p {
+  color: #fff;
+}
+
+.terms {
+  display: flex;
+  gap: 15px;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.Centrifuge {
+  display: flex;
+  gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 0.6rem;
+    padding: 20px;
+  }
+  .icons {
+    width: 10px;
+    height: 10px;
+  }
+  .Centrifuge{
+    display: none;
+  }
+}

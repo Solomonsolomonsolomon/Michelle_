@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Source+Code+Pro&display=swap");
+
+:root {
+  --primaryColor: #ebe0ce;
+  --secondaryColor: #9f2305;
+  background: #ebe0ce;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Pangolin", cursive, monospace;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+}
+
+.header-container {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Menu layout css here */
+
+.menuContainer{
+  display: flex;
+  width: 100%;
+}
+
+.menuContent{
+  width:75%
+}
+
+.nav-wrapper{
+  position: sticky;
+  top: 4.7rem;
+  z-index: 1;
+}
+
+.cartContainer{
+  width: 25%;
+  position: fixed;
+  right: 0;
+}
+
+/* menu layout mobile */
+
+@media screen and (max-width: 600px){
+ .cartContainer{
+    display: none;
+ }
+ .menuContent{
+  width: 100%;
+ }
+}

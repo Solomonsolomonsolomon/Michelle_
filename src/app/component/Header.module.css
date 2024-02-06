@@ -1,0 +1,49 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #ebe0ce;
+  box-shadow: 0 .3rem 5px  rgba(0, 0, 0, 0.2);
+  padding: 0.6rem 1.5rem;
+}
+
+.hamBurger {
+  color: var(--secondaryColor);
+  font-size: 1.5rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.2rem;
+}
+
+.phoneNumber{
+  display: block;
+}
+
+.logo {
+  height: 50px;
+  width: 80px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+.header{
+  padding: 0.4rem 0.6rem ;
+}
+
+  .phoneNumber{ 
+    display: none !important;
+  }
+
+  .hamBurger{
+    display: flex;
+  }
+
+  .buttonContainer{
+    display: none;
+  }
+}
