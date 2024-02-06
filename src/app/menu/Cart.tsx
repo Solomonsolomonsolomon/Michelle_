@@ -100,16 +100,16 @@ const Cart: React.FC<cartType> = ({ onClose }) => {
             <div> #11558.9</div>
           </div>
         </div>
-        <div className={styles.button} onClick={() => ""}>
-          <Link
+        <div className={styles.button}>
+          {/* <Link
             href="/reviewOrder"
             onClick={(e) => {
               e.preventDefault();
               console.log("cart clicked");
             }}
-          >
-            <Button width={180}>Checkout</Button>
-          </Link>
+          > */}
+          <Button width={180}>Checkout</Button>
+          {/* </Link> */}
         </div>
       </div>
     </div>
